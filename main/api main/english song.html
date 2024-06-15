@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songify - Listen to Your Favorite Music</title>
+    <link rel="stylesheet" href="english.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Songify</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html" class="nav-link">Home</a></li>
+                    <li><a href="english song.html" class="nav-link" id="english-songs-link">All Songs</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search songs..." onkeypress="searchSongs(event)">
+                <button onclick="searchSongs()">Search</button>
+            </div>
+            
+            <div id="noResultsMessage" class="no-results-message" style="display: none;">
+                <p>No results found.</p>
+            </div>
+            
+            <div class="song-list" id="song-list">
+                <div class="song-item">
+                    <div class="song-details">
+                        <p class="song-title">Shape Of You</p>
+                        <p class="song-artist">Ed Sheeran</p>
+                    </div>
+                    <button class="play-button" onclick="playSong('/sources/EN sources/Ed Sheeran  Shape Of You Lyrics.mp3')">Play</button>
+                </div>
+
+                <div class="song-list" id="song-list">
+                    <div class="song-item">
+                        <div class="song-details">
+                            <p class="song-title">Cupid Twin Version</p>
+                            <p class="song-artist">FIFTY FIFTY</p>
+                        </div>
+                        <button class="play-button" onclick="playSong('/sources/EN sources/FIFTY FIFTY  Cupid Twin Version Lyrics.mp3')">Play</button>
+                    </div>
+
+                    <div class="song-list" id="song-list">
+                        <div class="song-item">
+                            <div class="song-details">
+                                <p class="song-title">I Wanna Be Yours</p>
+                                <p class="song-artist">Arctic Monkeys </p>
+                            </div>
+                            <button class="play-button" onclick="playSong('/sources/EN sources/I Wanna Be Yours  Arctic Monkeys  Lyrics .mp3')">Play</button>
+                        </div>
+
+                        <div class="song-list" id="song-list">
+                            <div class="song-item">
+                                <div class="song-details">
+                                    <p class="song-title">Justin Bieber  Baby</p>
+                                    <p class="song-artist">ft Ludacris</p>
+                                </div>
+                                <button class="play-button" onclick="playSong('/sources/EN sources/Justin Bieber  Baby ft Ludacris.mp3')">Play</button>
+                            </div>
+
+                            <div class="song-list" id="song-list">
+                                <div class="song-item">
+                                    <div class="song-details">
+                                        <p class="song-title">Libianca  People</p>
+                                        <p class="song-artist">EN</p>
+                                    </div>
+                                    <button class="play-button" onclick="playSong('/sources/EN sources/Libianca  People Lyrics.mp3')">Play</button>
+                                </div>
+
+                                <div class="song-list" id="song-list">
+                                    <div class="song-item">
+                                        <div class="song-details">
+                                            <p class="song-title">LISA  MONEY</p>
+                                            <p class="song-artist">EN</p>
+                                        </div>
+                                        <button class="play-button" onclick="playSong('/sources/EN sources/LISA  MONEY Lyrics.mp3')">Play</button>
+                                    </div>
+
+                                    <div class="song-list" id="song-list">
+                                        <div class="song-item">
+                                            <div class="song-details">
+                                                <p class="song-title">Lonely  Akon </p>
+                                                <p class="song-artist">EN</p>
+                                            </div>
+                                            <button class="play-button" onclick="playSong('/sources/EN sources/Lonely  Akon Lyrics.mp3')">Play</button>
+                                        </div>
+
+
+
+                <!-- Songs will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+    
+    <div id="audioPlayer" class="audio-player">
+        <div class="container">
+            <audio id="audio" controls>
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <div class="opno">
+        <p>Search for more songs.</p>
+    </div>
+
+    <script src="english.js"></script>
+</body>
+</html>

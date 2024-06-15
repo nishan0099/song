@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songify - Listen to Your Favorite Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Songify</h1>
+            <nav>
+                <ul>
+                    
+                    <li><a href="index.html" class="nav-link">Nepali Music</a></li>
+                    <li><a href="/main/api main/english song.html" class="nav-link" id="english-songs-link">All Songs</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search songs...">
+                <button onclick="searchSongs()">Search</button>
+            </div>
+            
+            <div id="noResultsMessage" class="no-results-message" style="display: none;">
+                <p>No results found.</p>
+            </div>
+            
+            <div class="song-list">
+                <div class="song-item">
+                    <div class="song-details">
+                        <p class="song-title">comming soon</p>
+                        <p class="song-artist">🇳🇵</p>
+                    </div>
+                    <button class="play-button" onclick="playSong('/sources/NP sources/coming-soon-112064.mp3')">play</button>
+                </div>
+                
+                
+
+
+
+                <!-- Add more song items as needed -->
+            </div>
+        </div>
+    </main>
+    
+    <div id="audioPlayer" class="audio-player">
+        <div class="container">
+            <audio id="audio" controls>
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <div class="opno">
+        <p>Comming soon</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
